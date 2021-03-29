@@ -2,7 +2,7 @@ package _14CountNum;
 
 public class Main {
 
-	// 내 풀이 강사 풀이랑 동일 // 이전에 비슷한 문제가 있었음.
+	// 내 풀이 강사 풀이랑 동일 // 이전에 비슷한 문제가 있었음 (최다 빈출 찾기) 
 	public static void main(String[] args) {
 
 		int n = 321152260;
