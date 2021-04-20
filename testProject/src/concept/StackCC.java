@@ -22,7 +22,7 @@ public class StackCC {
 		System.out.println("Stack안에 firs 보유 확인:: " + stk.contains("firs"));
 		
 		//2. Stack에서 값을 꺼낸다.
-		System.out.println("Stack pop: " + stk.peek()); // FILO 구조 // 마지막에 들어온 값이 가장 먼저 꺼내짐. 
+		System.out.println("Stack pop: " + stk.peek()); // LIFO 구조 // 마지막에 들어온 값이 가장 먼저 꺼내짐. 
 		
 		//3. 특정 인덱스의 값 확인
 		System.out.println("0번째 인덱스 값 확인: " + stk.elementAt(0));

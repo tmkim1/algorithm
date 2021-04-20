@@ -12,8 +12,5 @@ public class JavaOutputFormatting {
 			int x = sc.nextInt();
 			System.out.printf("%-15s %05d %n",s1,x);
 		}
-		
-		
-		
 	}
 }
