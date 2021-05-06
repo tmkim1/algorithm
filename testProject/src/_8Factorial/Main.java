@@ -21,6 +21,7 @@ public class Main {
 		for (int i=1; i<=num; i++) {
 			result = result * i;
 		}
+		
 		return result;
 	}
 	

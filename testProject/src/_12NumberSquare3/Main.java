@@ -6,6 +6,8 @@ public class Main {
 	*/
 	
 	public static void main(String[] args) {
+		Square3(3);
+		
 		Square2(3);
 		
 		Square(10);
@@ -23,6 +25,7 @@ public class Main {
 			}
 			System.out.println();
 		}
+		System.out.println("----------------------------------------------------------");
 	}
 	
 	// 배열에 저장해서 푸는 방법으로 (인덱스를 가지고 놀기 때문에 훨씬 편하고 직관적임)
@@ -37,6 +40,19 @@ public class Main {
 				}
 				System.out.println();
 			}
+			System.out.println("----------------------------------------------------------");
+		}
+		
+		public static void Square3(int n) {
+			int arr[][] = new int[n][n];
 			
+			for(int i=0; i<n; i++) {
+				for(int j=0; j<n; j++) {
+					arr[i][j] = (i*n) + (j*n+1);  // ex 3) 0*3 + 0*3 +1 = 1, 0*3 + 1*3+1
+					System.out.printf("%3d", arr[i][j]);
+				}
+				System.out.println();
+			}
+			System.out.println("----------------------------------------------------------");
 		}
 }

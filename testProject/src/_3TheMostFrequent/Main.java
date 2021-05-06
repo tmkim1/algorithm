@@ -33,7 +33,7 @@ public class Main {
 			inputNum[i] = sc.nextInt();
 			mode[inputNum[i]]++;		// 출현한 숫자의 인덱스 값 ++ 
 		}
-
+		
 		// 값 비교
 		
 		int maxNum = 0;
