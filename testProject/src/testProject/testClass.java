@@ -2,6 +2,7 @@ package testProject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -11,6 +12,7 @@ public class testClass {
 	public static void main(String[] args) {
 		System.out.println("TEST");
 		System.out.println(solution(8154369));
+		System.out.println(solutionReview(8154369));
 		System.out.println(reverseInt(8154369));
 	}
 	
@@ -52,6 +54,35 @@ public class testClass {
 				return o2-o1;									// o1-o2:오름차순 o2-o1: 내림차순
 			}
 		});
+		
+		for(Integer i : ilist) {
+			strResult += String.valueOf(i);
+		}
+		
+		answer = Long.parseLong(strResult);
+		
+		return answer;
+	}
+	
+	public static long solutionReview(long n) {
+		long answer = 0;
+		String strResult = "";
+		String strn = String.valueOf(n);         			   //Type 변경 Long -> String :: String.valueOf(숫자)
+		
+		List<String> slist = Arrays.asList(strn.split(""));   //split("") :: split 인자안에 "" 만 넣어주면 각 자릿수를 잘라서 배열로 만듬. 
+		List<Integer> ilist = new ArrayList<Integer>();
+		
+		for (String s : slist) {
+			ilist.add(Integer.parseInt(s));
+		}
+		
+		/*ilist.sort(new Comparator<Integer>() {                // Comparator를 이용한 list 정렬
+			public int compare(Integer o1, Integer o2) {
+				return o2-o1;
+			}
+		});*/
+		
+		Collections.sort(ilist);
 		
 		for(Integer i : ilist) {
 			strResult += String.valueOf(i);

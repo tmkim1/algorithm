@@ -3,7 +3,7 @@ package _10NumberSquare;
 public class Main {
 
 	
-	// N행 N열의 형태로 사각형을 만
+	// N행 N열의 형태로 사각형을 만든다.
 	public static void main(String[] args) {
 		Square(5);
 		Square(4);

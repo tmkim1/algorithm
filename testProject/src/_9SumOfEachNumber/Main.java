@@ -5,7 +5,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println(SumResult(1242));
-		System.out.println(SumResult2(1242));
+		System.out.println(SumResult2(12425));
+		System.out.println(SumResult3(1242));
+		System.out.println(SumResult4(12425));
 	}
 	
 	// 내 풀이
@@ -31,5 +33,27 @@ public class Main {
 		return result;
 	}
 	
+	//************************************** 복습 *********************************************//
+	// 숫자를 받는다 => 각 자리수의 합을 구한다. 
+	public static int SumResult3(int num) {
+		int result = 0;
+		char[] charNum = String.valueOf(num).toCharArray();
+		
+		for(char c: charNum) {
+			result += Integer.parseInt(String.valueOf(c));
+		}
+		
+		return result;
+	}
+	
+	public static int SumResult4(int num) {
+		int result = 0;
+		while(num > 0) {
+			result += num % 10;
+			num /= 10;
+		}
+		
+		return result;
+	}
 
 }

@@ -1,5 +1,7 @@
 package _5ConvertAaaA;
 
+
+// 소대문자 변경 
 public class Main {
 
 	public static void main(String[] args) {
