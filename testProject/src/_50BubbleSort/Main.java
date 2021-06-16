@@ -10,13 +10,14 @@ import java.util.Arrays;
 public class Main {
 
 	public static void main(String[] args) {
-		
+		int [] numArr = {13,2,15,35,7,5,4,324,1,255};
+		BubbleSort(numArr);
 	}
 	
-	public void BubbleSort(int[] arr) {
+	public static void BubbleSort(int[] arr) {
 		int temp = 0;
 		for (int i=0; i<arr.length; i++) {       // 1. 전체 숫자 갯수만큼 돌아줘야함 한번 순회할때마다 검사하는 대상이 1개씩 차감 
-			for(int j=1; j<arr.length-1; j++) {  // 2. i에서 선택된 숫자와 비교될 대상을 순회, i에서 검사 숫자 1개를 가지고 있기 때문에 해당 항목을 차감 
+			for(int j=1; j<arr.length; j++) {  // 2. i에서 선택된 숫자와 비교될 대상을 순회, i에서 검사 숫자 1개를 가지고 있기 때문에 해당 항목을 차감 
 				if(arr[j-1] > arr[j]) {
 					temp = arr[j-1];             // 더 큰 값을 temp에 저장.
 					arr[j-1] = arr[j];           // 더 작은 값이 앞 인덱스에 오도록 저장.
@@ -27,3 +28,9 @@ public class Main {
 		System.out.println(Arrays.toString(arr));
 	}
 }
+
+
+//시간복잡도를 계산하면, (n-1) + (n-2) + (n-3) + .... + 2 + 1 => n(n-1)/2이므로, O(n^2) 이다. 
+//또한, Bubble Sort는 정렬이 돼있던 안돼있던,
+//2개의 원소를 비교하기 때문에 최선, 평균, 최악의 경우 모두 시간복잡도가 O(n^2) 으로 동일하다.
+// * 가장 직관적이지만, 시간 복잡도가 n^2 
