@@ -39,4 +39,22 @@ public class Main {
 		}
 		System.out.println(Arrays.toString(arr));
 	}
+	
+	// 연습  
+	public static void selectionSort2(int[] arr) {
+		int indexMain, temp; 
+		
+		for(int i=0; i<arr.length-1; i++) {
+			indexMain = i; 
+			for(int j=i+1; j<arr.length; j++) {
+				if(arr[j] < arr[indexMain]) {
+					indexMain = j;
+				}
+			}
+			
+			temp = arr[indexMain];
+			arr[indexMain] = arr[i];
+			arr[i] = temp;
+		}
+	}
 }
