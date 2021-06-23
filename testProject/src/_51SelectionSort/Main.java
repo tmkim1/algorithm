@@ -40,7 +40,7 @@ public class Main {
 		System.out.println(Arrays.toString(arr));
 	}
 	
-	// 연습  
+	// 연습1  
 	public static void selectionSort2(int[] arr) {
 		int indexMain, temp; 
 		
@@ -55,6 +55,24 @@ public class Main {
 			temp = arr[indexMain];
 			arr[indexMain] = arr[i];
 			arr[i] = temp;
+		}
+	}
+	
+	// 연습2
+	public static void selectionSort3(int[] arr) {
+		int indexMain, temp;
+		
+		for(int i=0; i<arr.length-1; i++) {
+			indexMain = i;
+			for(int j=i+1; j<arr.length; j++) {
+				if(arr[j] < arr[indexMain]) {
+					indexMain = j;
+				}
+			}
+			
+			temp = arr[indexMain];					// 가장 작은 값을 찾아서 temp에 넣고 
+			arr[indexMain] = arr[i];                // 가장 작은 값이 위치하던 index에 선택된 index에 있던 값을 넣고 (swap)
+			arr[i] = temp;                          // 선택된 자리에는 가장 작은 값이 들어간다. 
 		}
 	}
 }

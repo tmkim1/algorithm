@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 손 안의 카드를 정렬하는 방법과 유사
  * 선택 정렬과 유사하지만 좀 더 효율적 
  * 2번째 원소부터 시작하여 그 앞(왼쪽)의 원소들과 비교하여 삽입할 위치를 지정한 후, 원소를 뒤로 옮기고 지정된 자리에 자료를 삽입 하여 정렬하는 알고리즘
- * 최선의 경우 O(N) ==> 다른 정렬 알고리즘의 일부로 사용될 만큼 좋은 정렬 알고리즘 // 실생황에서 쓰는 정렬법과 유사 
+ * 최선의 경우 O(N) ==> 다른 정렬 알고리즘의 일부로 사용될 만큼 좋은 정렬 알고리즘 // 실생활에서 쓰는 정렬법과 유사 
  * 
  * 
  *[point]
@@ -39,14 +39,14 @@ public class Main {
 				arr[prev+1] = arr[prev];
 				prev--;
 			}
-			arr[prev+1] = temp; 						// prev를 감소 시키다가 자기보다 더 작은 값을 만나면 그 다음 자리에 들어감.
+			arr[prev+1] = temp; 						// prev를 감소 시키다가 자기보다 더 작은 값을 만나면 그 자리에 들어감.
 		}
 		System.out.println(Arrays.toString(arr));
 	}
 	
 	
 	
-	//연습 
+	//연습1 
 	public static void insertionSort2(int[] arr) {
 		for(int i=1; i<arr.length; i++) {
 			int temp = arr[i];
@@ -62,7 +62,6 @@ public class Main {
 	}
 	
 	//연습2
-	
 	public static void insertionSort3(int[] arr) {
 		for(int i=1; i<arr.length; i++) {
 			int temp = arr[i];

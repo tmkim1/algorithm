@@ -12,6 +12,7 @@ public class Main {
 	public static void main(String[] args) {
 		int [] numArr = {13,2,15,35,7,5,4,324,1,255};
 		BubbleSort(numArr);
+		BubbleSort2(numArr);
 	}
 	
 	public static void BubbleSort(int[] arr) {
@@ -27,6 +28,22 @@ public class Main {
 		}
 		System.out.println(Arrays.toString(arr));
 	}
+	
+	//연습 
+	public static void BubbleSort2(int[] arr) {
+		int temp = 0;
+		for(int i=0; i<arr.length; i++) {
+			for(int j=1; j<arr.length; j++) {
+				if(arr[j-1] > arr[j]) {
+					temp = arr[j-1];
+					arr[j-1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(arr));
+	}
+	
 }
 
 

@@ -34,7 +34,7 @@ public class Main {
 		
 		int pivot = partition(array, left, right);
 		
-	    // 피벗은 제외한 2개의 부분 배열을 대상으로 순황 호출. 
+	    // 피벗을 제외한 2개의 부분 배열을 대상으로 순환 호출. 
 	    quickSort(array, left, pivot-1);  // 좌측 파티션 
 	    quickSort(array, pivot+1, right); // 우측 파티션 
 	    
