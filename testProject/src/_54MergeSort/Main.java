@@ -36,34 +36,9 @@ public class Main {
 			
 			mergeSort(arr, left, mid);
 			mergeSort(arr, mid+1, right);
-			merge(arr, left, mid, right); //merge 정렬 로직 핵심. 
+			merge3(arr, left, mid, right); //merge 정렬 로직 핵심. 
 			
 		}
-	}
-	
-	public static void merge2(int[] array, int left, int mid, int right) {
-	    int[] L = Arrays.copyOfRange(array, left, mid + 1);
-	    int[] R = Arrays.copyOfRange(array, mid + 1, right + 1);
-	 
-	    int i = 0, j = 0, k = left;
-	    int ll = L.length, rl = R.length;
-	 
-	    while (i < ll && j < rl) {
-	        if (L[i] <= R[j]) {
-	            array[k] = L[i++];
-	        } else {
-	            array[k] = R[j++];
-	        }
-	        k++;
-	    }
-	 
-	    while (i < ll) {
-	        array[k++] = L[i++];
-	    }
-	 
-	    while (j < rl) {
-	        array[k++] = R[j++];
-	    }
 	}
 	
 	public static void merge(int[] arr, int left, int mid, int right) {
@@ -91,4 +66,56 @@ public class Main {
 			arr[k++] = R[j++];
 		}
 	}
+	
+	// 연습 
+	public static void merge2(int[] array, int left, int mid, int right) {
+	    int[] L = Arrays.copyOfRange(array, left, mid + 1);
+	    int[] R = Arrays.copyOfRange(array, mid + 1, right + 1);
+	 
+	    int i = 0, j = 0, k = left;
+	    int ll = L.length, rl = R.length;
+	 
+	    while (i < ll && j < rl) {
+	        if (L[i] <= R[j]) {
+	            array[k] = L[i++];
+	        } else {
+	            array[k] = R[j++];
+	        }
+	        k++;
+	    }
+	 
+	    while (i < ll) {
+	        array[k++] = L[i++];
+	    }
+	 
+	    while (j < rl) {
+	        array[k++] = R[j++];
+	    }
+	}
+	//연습2 
+	public static void merge3(int[] array, int left, int mid, int right) {
+		int[] L = Arrays.copyOfRange(array, left, mid+1);
+		int[] R = Arrays.copyOfRange(array, mid+1, right);
+		
+		int i=0, j=0, k=left;
+		int ll=L.length, rl=R.length;
+		
+		while(i < ll && j < rl) {
+			if(L[i] <= R[j]) {
+				array[k] = L[i++];
+			} else {
+				array[k] = R[j++];
+			}
+			k++;
+		}
+		
+		while (i < ll) {
+			array[k++] = L[i++];
+		}
+		
+		while (j < rl) {
+			array[k++] = R[j++];
+		}
+	}
 }
+	
