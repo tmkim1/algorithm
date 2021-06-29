@@ -54,10 +54,12 @@ public class Main {
 		int n = array.length;
 		
 		//init, maxheap
-		for(int i = n / 2 - 1; i >= 0; i--) {    // i = n/2 -1 트리에 특징에 따른 공식 
+		//부모 노드의 인덱스를 기준으로 왼쪽 자식노드 (i2 + 1), 오른쪽 자식 노드(i2 + 2)이기 때문
+		for(int i = n / 2 - 1; i >= 0; i--) {    
 			heapify(array, n, i);
 		}
 		
+		//extract 연산: Root에 있던 노드를 마지막 노드와 swap한 후, 정렬 대상에서 제외 => heapify 실
 		for(int i = n-1; i > 0; i--) {
 			swap(array, 0, i);
 			heapify(array, i, 0);

@@ -26,6 +26,11 @@ import java.io.InputStreamReader;
  * abcd2
  * OK
  * 
+ *  *  *  @출처 
+ *  1. 테크 인터뷰: https://gyoogle.dev/blog/algorithm/Insertion%20Sort.html 
+ *  2. 도서: 처음 만나는 알고리즘
+ *  3. 강의: 엔지니어 대한민국 (https://www.youtube.com/watch?v=Vi0hauJemxA)
+ * 
  * @author kimtaemin
  *
  */
