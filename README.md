@@ -21,4 +21,6 @@ practice (java)
 4. [팩토리얼 구현](testProject/src/_8Factorial/Main.java) 재귀함수 활용
 5. [각 자리의 합 구하기](testProject/src/_9SumOfEachNumber/Main.java) 자료형 변환 활용 
 6. [N * N 행렬 만들기](testProject/src/_10NumberSquare/Main.java),[짝수는 역순](testProject/src/_11NumberSquare2/Main.java)
+7. [숫자 별 빈출 횟수 구하기](testProject/src/_14CountNum/Main.java)
+8. 
 
