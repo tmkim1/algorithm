@@ -11,3 +11,10 @@ practice (java)
 
 # 탐색
 1. [이진탐색](testProject/src/_55BinarySearch/Main.java) (Binary Search)
+
+
+
+# 자바 연습 문제 
+1. [Array Conversion](testProject/src/_5ConvertAaaA/Main.java) 
+2. [최대 공약수 구하기](testProject/src/_6GCD/Main.java)
+3. [소수 구하기](testProject/src/_7PrimeNumber/Main.java)
