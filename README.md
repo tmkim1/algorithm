@@ -1,7 +1,8 @@
 # algorithm
 practice (java)
+____________________________________________________________________________________________________________
 
-# *정렬 
+# ● 정렬 
 1. [버블정렬](testProject/src/_50BubbleSort/Main.java) (Bubble Sort)
 2. [선택정렬](testProject/src/_51SelectionSort/Main.java) (Selection Sort)
 3. [삽입정렬](testProject/src/_52InsertionSort/Main.java) (Insertion Sort)
@@ -9,12 +10,14 @@ practice (java)
 5. [합병정렬](testProject/src/_54MergeSort/Main.java) (Merge Sort)
 6. [힙정렬](testProject/src/_57HeapSort/Main.java) (Heap Sort)
 
-# 탐색
+____________________________________________________________________________________________________________
+
+# ● 탐색
 1. [이진탐색](testProject/src/_55BinarySearch/Main.java) (Binary Search)
 
+____________________________________________________________________________________________________________
 
-
-# 자바 연습 문제 
+# ● 자바 연습 문제 
 1. [Array Conversion](testProject/src/_5ConvertAaaA/Main.java) 
 2. [최대 공약수 구하기](testProject/src/_6GCD/Main.java)
 3. [소수 구하기](testProject/src/_7PrimeNumber/Main.java)
@@ -22,5 +25,3 @@ practice (java)
 5. [각 자리의 합 구하기](testProject/src/_9SumOfEachNumber/Main.java) 자료형 변환 활용 
 6. [N * N 행렬 만들기](testProject/src/_10NumberSquare/Main.java),[짝수는 역순](testProject/src/_11NumberSquare2/Main.java)
 7. [숫자 별 빈출 횟수 구하기](testProject/src/_14CountNum/Main.java)
-8. 
-
