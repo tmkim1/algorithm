@@ -18,4 +18,5 @@ practice (java)
 1. [Array Conversion](testProject/src/_5ConvertAaaA/Main.java) 
 2. [최대 공약수 구하기](testProject/src/_6GCD/Main.java)
 3. [소수 구하기](testProject/src/_7PrimeNumber/Main.java)
-4. [팩토리얼 구현](testProject/src/_8Factorial/Main.java), 
+4. [팩토리얼 구현](testProject/src/_8Factorial/Main.java) 재귀함수 활용
+5. [각 자리의 합 구하기](testProject/src/_9SumOfEachNumber/Main.java) 자료형 변환 활용 
