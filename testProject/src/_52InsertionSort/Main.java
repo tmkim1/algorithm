@@ -32,14 +32,14 @@ public class Main {
 	
 	public static void insertionSort(int[] arr) {
 		for(int i=1; i<arr.length; i ++) {
-			int temp = arr[i];				            // 초기 선택 값 지정, 첫 번째 원소 앞에는 어떤 원소도 갖고 있지 않기 때문에, 두 번째 인덱스부터 탐 
+			int temp = arr[i];				 // 초기 선택 값 지정, 첫 번째 원소 앞에는 어떤 원소도 갖고 있지 않기 때문에, 두 번째 인덱스부터 탐 
 			int prev = i-1;
 			
-			while((prev >= 0) && (arr[prev] > temp)) {	// prev의 값이 더 크다면 자리를 바꿔줘야 함. 
+			while((prev >= 0) && (arr[prev] > temp)) {	 // prev의 값이 더 크다면 자리를 바꿔줘야 함. 
 				arr[prev+1] = arr[prev];
 				prev--;
 			}
-			arr[prev+1] = temp; 						// prev를 감소 시키다가 자기보다 더 작은 값을 만나면 그 자리에 들어감.
+			arr[prev+1] = temp; 				 // prev를 감소 시키다가 자기보다 더 작은 값을 만나면 그 자리에 들어감.
 		}
 		System.out.println(Arrays.toString(arr));
 	}
@@ -52,7 +52,7 @@ public class Main {
 			int temp = arr[i];
 			int prev = i-1;
 			
-			while ((prev >= 0) && (arr[prev] > arr[i])) { // 책 꽂을때처럼 선택한 값을 temp에 빼놨다가 다른거 밀고 넣기.
+			while ((prev >= 0) && (arr[prev] > arr[i])) {   // 책 꽂을때처럼 선택한 값을 temp에 빼놨다가 다른거 밀고 넣기.
 				arr[prev+1] = arr[prev];
 				prev--;
 			}
