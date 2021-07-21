@@ -20,6 +20,7 @@ public class Main {
 		int temp = 0;
 		for (int i=0; i<arr.length; i++) {               // 1. 전체 숫자 갯수만큼 돌아줘야함 한번 순회할때마다 검사하는 대상이 1개씩 차감 
 			for(int j=0; j<arr.length-i-1; j++) {    // 2. 첫번째 원소부터 비교될 대상을 순회, 매 순회마다 가장 큰 값이 뒤에 자리를 찾아가기 때문에 -i만큼 정렬 범위 조정
+				if(arr[j] > arr[j+1]) {	
 					temp = arr[j];           // 더 큰 값을 temp에 저장.
 					arr[j] = arr[j+1];       // 더 작은 값이 앞 인덱스에 오도록 저장.
 					arr[j+1] = temp;         // temp에 저장했던 더 큰 값을 뒤에 오도록 저장.
